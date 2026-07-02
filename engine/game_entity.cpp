@@ -16,10 +16,6 @@ void GameEntity::take_damage(int amount) {
     return;
   }
   health_ -= amount;
-  if (health_ <= 0) {
-    health_ = 0;
-    alive_ = false;
-  }
 }
 
 bool GameEntity::heal(int amount) {
